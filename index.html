@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/bxslider/bxslider-4-master/dist/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/bxslider/bxslider-4-master/dist/jquery.bxslider.min.js"></script>
+    <title>Happy Hack</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#access">Access</a></li>
+            </ul>
+        </nav>
+    <div class="slide-show">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+    </div>
+    <div class="header-logo">
+        <img src="images/logo.png" alt="" width="900px">
+        <h1>We are Web Designers.</h1>
+    </div>
+        
+    </div>
+    
+    <div class="main">
+        <section class="introduction">
+            <h2>Introduction</h2>
+            <div class="detail">
+               <div class="intro1">
+                <img src="images/introduction_001.jpg" alt="" width="500px">
+                <p>
+                Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。 <br>
+                  <a href="#introduction" class="bluebox">会員登録</a>
+                </p>
+            </div>
+            <div class="intro2">
+                <p>
+                Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。<br>
+                <a href="#introduction" class="yellowbox">会員登録</a>
+                </p>
+                <img src="images/introduction_002.jpg" alt="" width="500px">
+            </div>
+            </div>
+        </section>
+        
+        <section class="courses">
+           <h2>Courses</h2>
+           <div class="first-line">
+            <div class="detail-courses" id="html">
+                <img src="images/html.png" alt="">
+                <h3>HTMLコース</h3>
+                <a href=#courses>このコースを受ける</a>
+            </div>
+            <div class="detail-courses" id="css">
+                <img src="images/css.png" alt="">
+                <h3>CSSコース</h3>
+                <a href=#courses>このコースを受ける</a>
+            </div>
+            <div class="detail-courses" id="unity">
+                <img src="images/unity.png" alt="">
+                <h3>Unityコース</h3>
+                <a href=#courses>このコースを受ける</a>
+            </div>
+            <div class="detail-courses" id="ruby">
+                <img src="images/ruby.png" alt="">
+                <h3>Rubyコース</h3>
+                <a href=#courses>このコースを受ける</a>
+            </div>
+            </div>
+            
+            <div class="second-line">
+            <div class="detail-courses" id="js">
+                <img src="images/js.png" alt="">
+                <h3>JavaScriptコース</h3>
+                <a href=#courses>このコースを受ける</a>
+            </div>
+            <div class="detail-courses" id="swift">
+                <img src="images/swift.png" alt="">
+                <h3>Swiftコース</h3>
+                <a href=#courses>このコースを受ける</a>
+            </div>
+            <div class="detail-courses" id="go">
+                <img src="images/go.png" alt="">
+                <h3>Goコース</h3>
+                <a href=#courses>このコースを受ける</a>
+            </div>
+            </div>
+        </section>
+        
+        <section class="images">
+            <h2>Images</h2>
+            <div class="slider">
+               <ul>
+                   <li><img src="images/hero.jpg" alt="" width="258px"></li>
+                   <li><img src="images/background2.jpg" alt="" width="258px"></li>
+                   <li><img src="images/background3.jpg" alt="" width="258px"></li>
+                <li><img src="images/background4.jpg" alt="" width="258px"></li><li><img src="images/background5.jpg" alt="" width="258px"></li>
+                </ul>
+            
+            <script>
+                $(document).ready(function(){
+                    $('.slider').bxSlider({
+                        auto: true,//自動切り替えの有無
+  pause:6000,//停止時間※デフォルトは4000
+  speed:1000,//動くスピード※デフォルトは500
+  minSlides: 3,//一度に表示させる画像の最小値
+  maxSlides: 4,//一度に表示させる画像の数
+  slideWidth: 160,
+  slideMargin: 10,
+  pager: true,
+  prevText: '＜',
+  nextText: '＞',
+
+                    });
+                });
+            </script>
+            </div>
+        </section>
+        
+        <section class="access">
+            <h2>Access</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.312953947739!2d135.4902599148463!3d34.697285690909574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1600784578781!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+
+    </div>
+    
+    <div class="footer">
+        © 2019 Happy Hack Inc.
+    </div>
+</body>
+</html>

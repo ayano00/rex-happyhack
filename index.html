@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/bxslider/bxslider-4-master/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="/bxslider/bxslider-4-master/bxslider-4-master/dist/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/bxslider/bxslider-4-master/dist/jquery.bxslider.min.js"></script>
+
     <title>Happy Hack</title>
     <link rel="icon"  href="/images/favicon.ico">
 </head>
@@ -94,8 +95,10 @@
         
         <section class="images">
             <h2>Images</h2>
-            <div class="slider">
-               <ul>
+<!--
+            <div id="slider-wrapper">
+            <div id="slider">
+               <ul　id="images">
                    <li><img src="images/hero.jpg" alt="" width="258px"></li>
                    <li><img src="images/background2.jpg" alt="" width="258px"></li>
                    <li><img src="images/background3.jpg" alt="" width="258px"></li>
@@ -104,11 +107,71 @@
             
             <script>
                 $(document).ready(function(){
-                    $('.slider').bxSlider({
+                    $('#slider').bxSlider({
                     });
                 });
+                
+                
             </script>
             </div>
+            </div>
+-->
+<!--
+       <div id="image-bloc">
+    <ul class="slider">
+      <li class="slide"><a href=""><img src="images/hero.jpg" width="258px" height="170" alt=""></a></li>
+      <li class="slide"><a href=""><img src="images/background2.jpg" width="258px" height="170" alt=""></a></li>
+      <li class="slide"><a href=""><img src="images/background3.jpg" width="258px" height="170" alt=""></a></li>
+      <li class="slide"><a href=""><img src="images/background4.jpg" width="258px" height="170" alt=""></a></li>
+      <li class="slide"><a href=""><img src="images/background5.jpg" width="258px" height="170" alt=""></a></li>
+    </ul>
+     
+-->
+<!--
+       <script>  
+           $(document).ready(function() {
+    var obj = $('.slider').bxSlider({ // 自動再生に必須
+//      auto: true,
+//      infiniteLoop: true,
+//      responsive: false,
+//      speed: 1000,
+//      displaySlideQty: 1,
+//      pager: true,
+//      slideWidth: 260,
+//      minSlides: 1,
+//      maxSlides: 1,
+//      moveSlides: 1,
+//      slideMargin: 30,
+//      pause: 4000,
+//      onSlideAfter: function() { // 自動再生に必須
+//      obj.startAuto();
+      }
+    });
+  });</script>
+  
+-->
+  
+<!--  </div>-->
+       
+       <div class="slider">
+  <div><img src="images/hero.jpg" width="258" alt=""></div>
+  <div><img src="images/background2.jpg" width="258" alt=""></div>
+  <div><img src="images/background3.jpg" width="258" alt=""></div>
+  <div><img src="images/background4.jpg" width="258" alt=""></div>
+  <div><img src="images/background5.jpg" width="258" alt=""></div>
+</div>
+
+<!--実際に動かしているコード-->
+<script>
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+//        mode: "fade",
+//        auto: "true",
+//        controls: false
+    });
+  });
+</script>
+
         </section>
         
         <section class="access">
@@ -139,5 +202,6 @@
     <div id="particles-js"></div>
   <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
    <script src="app.js"></script>
+   
 </body>
 </html>

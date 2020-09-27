@@ -139,7 +139,7 @@ a.yellowbox{
 }
 
 .courses{
-    background-color: #dbe3ff;
+    background-color: #D6E6F9;
     padding-bottom: 50px;
 }
 
@@ -208,13 +208,39 @@ h3{
     background-color: #73CEDE;
 }
 
-.slider{
+/*高さを固定*/
+/*
+ #image-bloc {
+    height: 200px;
+  }
+*/
+
+/*幅を親要素の幅に指定※画像のサイズに合わせてしまうと末尾のクローンが下に回り込みレイアウトが崩れます。非表示になっている2枚目以降の画像をoverflow:visible!importantで再表示。*/
+/*
+  .bx-viewport {
+    overflow: visible!important;
+    width: 1100px!important;
+  }
+*/
+
+/*これを指定しないとブラウザ最下部にスクロールバーが出てしまうのでoverflow:hiddenで解除。*/
+/*
+  .main-container { 
     overflow: hidden;
-    float: left;
-}
+    padding-bottom: 150px;
+  }
 
-
-
+  .slider {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .slider li {
+    width: 258px!important;
+    margin: 0;
+    padding: 0;
+  }
+*/
 .footer{
     color: #3d5cdb;
     margin-top: 65px;

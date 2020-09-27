@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/bxslider/bxslider-4-master/dist/jquery.bxslider.min.js"></script>
     <title>Happy Hack</title>
+    <link rel="icon"  href="/images/favicon.ico">
 </head>
 <body>
     <div class="header">
@@ -17,17 +18,12 @@
                 <li><a href="#images">Images</a></li>
                 <li><a href="#access">Access</a></li>
             </ul>
-        </nav>
-    <div class="slide-show">
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
-    </div>
+        </nav>  
+    
     <div class="header-logo">
         <img src="images/logo.png" alt="" width="900px">
         <h1>We are Web Designers.</h1>
     </div>
-        
     </div>
     
     <div class="main">
@@ -93,6 +89,7 @@
                 <a href=#courses>このコースを受ける</a>
             </div>
             </div>
+            <div id="particles-js"></div>
         </section>
         
         <section class="images">
@@ -108,17 +105,6 @@
             <script>
                 $(document).ready(function(){
                     $('.slider').bxSlider({
-                        auto: true,//自動切り替えの有無
-  pause:6000,//停止時間※デフォルトは4000
-  speed:1000,//動くスピード※デフォルトは500
-  minSlides: 3,//一度に表示させる画像の最小値
-  maxSlides: 4,//一度に表示させる画像の数
-  slideWidth: 160,
-  slideMargin: 10,
-  pager: true,
-  prevText: '＜',
-  nextText: '＞',
-
                     });
                 });
             </script>
@@ -135,5 +121,23 @@
     <div class="footer">
         © 2019 Happy Hack Inc.
     </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.bgswitcher.js"></script>
+    <script>
+        jQuery(function($) {
+    $('.header').bgSwitcher({
+        images: ['images/hero.jpg','images/background2.jpg','images/background3.jpg', 'images/background4.jpg', 'imagesbackground5.jpg'], 
+        Interval: 7000, //切り替えの間隔 1000=1秒
+        start: true, //$.fn.bgswitcher(config)をコールした時に切り替えを開始する
+        loop: true, //切り替えをループする
+        effect: "fade", //エフェクトの種類 "fade" "blind" "clip" "slide" "drop" "hide"
+        duration: 1500, //エフェクトの時間 1000=1秒
+        easing: "swing", //エフェクトのイージング "swing" "linear"
+    });
+});
+    </script>
+    <div id="particles-js"></div>
+  <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
+   <script src="app.js"></script>
 </body>
 </html>

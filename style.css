@@ -12,10 +12,11 @@ body{
 }
 
 .header {
-  background-color: #26d0c9;
   height: 100vh;
   position: relative;
   overflow: hidden;
+  background-position: center center;
+  background-size: cover;
 }
 
 .header-logo{
@@ -27,13 +28,6 @@ body{
 .header-logo img{
     margin-top: 130px;
 }
-/*
-.header nav{
-    position:absolute;
-    float: right;
-    display: block;
-}
-*/
 
 .header ul {
   text-align: right;
@@ -145,7 +139,7 @@ a.yellowbox{
 }
 
 .courses{
-    background-image: url(images/background2.jpg);
+    background-color: #dbe3ff;
     padding-bottom: 50px;
 }
 
@@ -213,19 +207,12 @@ h3{
 #go a{
     background-color: #73CEDE;
 }
-/*
 
-.slide-wrapper{
+.slider{
     overflow: hidden;
+    float: left;
 }
-*/
 
-/*
-.slide {
-  width: 70vw !important;
-  height: 150px;
-}
-*/
 
 
 .footer{

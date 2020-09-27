@@ -9,6 +9,7 @@ body{
     position: relative;
     text-align: center;
     color: #333;
+    margin: 0 auto;
 }
 
 .header {
@@ -70,6 +71,8 @@ h2{
 
 .introduction{
     margin: 0 auto;
+    width: 1040px;
+    height: 800px;
 }
 
 .detail{
@@ -125,7 +128,7 @@ h2{
 }
 
 a:hover{
-    影;
+    box-shadow: 0 0 7px gray;
 }
 
 a.bluebox{
@@ -139,40 +142,78 @@ a.yellowbox{
 }
 
 .courses{
-    background-color: #D6E6F9;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+/*
+    margin-top: 50px;
     padding-bottom: 50px;
+    height: 942px;
+*/
+/*        width: 100vw;*/
+}
+
+.corses-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .detail-courses{
-    width: 240px;
-    height: 340px;
+    position: relative;
+    width: 180px;
+    height: 280px;
     background-color: #fff;
+    padding: 30px;
+    margin: 20px 10px 10px;
+    float: left;
     border-radius: 12px;
-    text-align: center;
-    margin: 10px;
 }
 
 .detail-courses img{
     margin: 35px;
 }
+/*
+.html-image{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+}
 
+.html-image img{
+    width: 100px;
+    margin: 0 auto;
+    
+}
+*/
 h3{
     padding-bottom: 30px;
     font-size: 15px;
 }
 
 .detail-courses a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 13px;
-    padding: 10px 20px;
+    padding: 10px 0px;
     color: #fff;
-    border-radius: 12px;
     text-decoration: none;
     transition: 0.5s;
     position: relative;
+    border-radius: 12px;
 }
+
 .first-line{
+    width: 1200px;
+    overflow: auto;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #html a{
@@ -191,10 +232,12 @@ h3{
     background-color: #FE5253;
 }
 
+/*
 .second-line{
     display: flex;
     justify-content: center;
 }
+*/
 
 #js a{
     background-color: #FED702;
@@ -208,39 +251,45 @@ h3{
     background-color: #73CEDE;
 }
 
-/*高さを固定*/
-/*
- #image-bloc {
-    height: 200px;
-  }
-*/
-
-/*幅を親要素の幅に指定※画像のサイズに合わせてしまうと末尾のクローンが下に回り込みレイアウトが崩れます。非表示になっている2枚目以降の画像をoverflow:visible!importantで再表示。*/
-/*
-  .bx-viewport {
-    overflow: visible!important;
-    width: 1100px!important;
-  }
-*/
-
-/*これを指定しないとブラウザ最下部にスクロールバーが出てしまうのでoverflow:hiddenで解除。*/
-/*
-  .main-container { 
+#particles-js{
+ height: 100vh;
+ width: 100vw;
+ background-color: #D6E6F9;
+/*    z-index: -100;*/
     overflow: hidden;
-    padding-bottom: 150px;
-  }
-
-  .slider {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .slider li {
-    width: 258px!important;
-    margin: 0;
-    padding: 0;
-  }
+/*
+    position: absolute;
+    top: 0px;
 */
+}
+
+/*
+.images{
+    width: 1200px;
+    height: 800px;
+}
+*/
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.slider{
+    margin: 100px auto;
+    width: 80%;
+}
+
+.slider img{
+    height: auto;
+    width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
 .footer{
     color: #3d5cdb;
     margin-top: 65px;

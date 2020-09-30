@@ -1,47 +1,54 @@
-*{
+@font-face {
+  font-family: 'Futura-Med';
+  src: url('/fonts/Futura-Med.ttf') format('woff');
+       url('/fonts/Futura-Med.ttf') format('truetype');
+}
+ 
+* {
     margin: 0;
     padding: 0;
-    font-family: Futura, "ヒラギノ角ゴシック";
 }
 
-body{
+body {
     width: 100%;
     position: relative;
     text-align: center;
     color: #333;
     margin: 0 auto;
+    fonts-family: 'ヒラギノ角ゴ ProN W3';
 }
 
 .header {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background-position: center center;
-  background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
 }
 
-.header-logo{
+.header-logo {
     width: 100%;
     overflow: hidden;
-    position: relative;　
+    position: relative;
 }
 
-.header-logo img{
+.header-logo img {
     margin-top: 130px;
 }
 
 .header ul {
-  text-align: right;
-}
- 
-.header li {
-  display: inline-block;
-  list-style-type: none;
-  position: top;
+    text-align: right;
 }
 
-nav a{
+.header li {
+    display: inline-block;
+    list-style-type: none;
+    position: top;
+}
+
+nav a {
     font-size: 27px;
+    font-family: "Futura-Med";
     display: block;
     text-decoration: none;
     color: #fff;
@@ -51,37 +58,39 @@ nav a{
     position: relative;
 }
 
-nav a:hover{
+nav a:hover {
     color: #3d5cdb;
 }
 
-h1{
+h1 {
     color: #fff;
     text-align: center;
     font-size: 42px;
     font-style: italic;
     margin-top: 45px;
+    font-family: "Futura-Med"
 }
 
-h2{
+h2 {
     color: #3d5cdb;
     font-size: 42px;
     padding: 50px;
+    font-family: "Futura-Med"
 }
 
-.introduction{
+.introduction {
     margin: 0 auto;
     width: 1040px;
-    height: 800px;
+    height: 1000px;
 }
 
-.detail{
+.detail {
     width: 1040px;
     height: 800px;
     margin: 0 auto;
 }
 
-.detail p{
+.detail p {
     overflow: hidden;
     width: 400px;
     height: 300px;
@@ -89,12 +98,12 @@ h2{
     line-height: 30px;
 }
 
-.intro1 img{
+.intro1 img {
     margin-right: 90px;
     float: left;
 }
 
-.intro1 p{
+.intro1 p {
     margin-top: 12px;
 }
 
@@ -102,65 +111,66 @@ h2{
     margin-top: 100px;
 }
 
-.intro2 img{
+.intro2 img {
     float: left;
     overflow: hidden;
     margin-left: 90px;
     margin-top: 30px;
 }
 
-.intro2 p{
-    margin-top:25px;
+.intro2 p {
+    margin-top: 25px;
     margin-left: 50px;
     float: left;
 }
 
-.detail a{
+.detail a {
     margin-top: 30px;
     margin-left: 100px;
     font-size: 18px;
     padding: 7px 50px;
     color: #fff;
-/*    border: 1px solid #3b5998;*/
+    /*    border: 1px solid #3b5998;*/
     border-radius: 12px;
     text-decoration: none;
     transition: 0.5s;
 }
 
-a:hover{
-    box-shadow: 0 0 7px gray;
+a:hover {
+    box-shadow: 0 0 10px gray;
 }
 
-a.bluebox{
+a.bluebox {
     background: #3d5cdb;
-     position: absolute;
+    position: absolute;
 }
 
-a.yellowbox{
+a.yellowbox {
     background: #ffbf00;
     position: absolute;
 }
 
-.courses{
+.courses {
     margin: 0 auto;
-    width: 100%;
-    position: absolute;
-/*
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: table;
+    /*
     margin-top: 50px;
     padding-bottom: 50px;
     height: 942px;
 */
-/*        width: 100vw;*/
 }
 
-.corses-wrapper{
+.corses-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.detail-courses{
+.detail-courses {
     position: relative;
     width: 180px;
     height: 280px;
@@ -171,9 +181,21 @@ a.yellowbox{
     border-radius: 12px;
 }
 
-.detail-courses img{
-    margin: 35px;
+.detail-courses img {
+    margin: 10px;
+
 }
+
+/*
+.detail-courses a {
+    border-radius: 12px;
+    margin-bottom: -10px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+*/
+
 /*
 .html-image{
     width: 150px;
@@ -188,12 +210,13 @@ a.yellowbox{
     
 }
 */
-h3{
+
+h3 {
     padding-bottom: 30px;
     font-size: 15px;
 }
 
-.detail-courses a{
+.detail-courses a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,8 +229,13 @@ h3{
     border-radius: 12px;
 }
 
-.first-line{
-    width: 1200px;
+figure{
+    height: 160px;
+    width: 180px;
+}
+.first-line {
+    width: 100vw;
+    height: 100vh;
     overflow: auto;
     margin-bottom: 40px;
     display: flex;
@@ -216,19 +244,31 @@ h3{
     flex-wrap: wrap;
 }
 
-#html a{
+#html img{
+    padding-top: 7px;
+}
+
+#html a {
     background-color: #F1662B;
 }
 
-#css a{
+#css a {
     background-color: #29AADF;
 }
 
-#unity a{
+#unity img{
+    padding-top: 12px;
+}
+
+#unity a {
     background-color: #333;
 }
 
-#ruby a{
+#ruby img{
+    padding-top: 10px;
+}
+
+#ruby a {
     background-color: #FE5253;
 }
 
@@ -239,28 +279,30 @@ h3{
 }
 */
 
-#js a{
+#js a {
     background-color: #FED702;
 }
 
-#swift a{
+#swift a {
     background-color: #FE7536;
 }
 
-#go a{
+#go a {
     background-color: #73CEDE;
 }
 
-#particles-js{
- height: 100vh;
- width: 100vw;
- background-color: #D6E6F9;
-/*    z-index: -100;*/
+#particles-js {
+    height: 100vh;
+    width: 100vw;
+    background-color: #D6E6F9;
+    z-index: -1;
     overflow: hidden;
-/*
     position: absolute;
     top: 0px;
-*/
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+
 }
 
 /*
@@ -270,28 +312,51 @@ h3{
 }
 */
 
-.wrapper{
+.wrapper {
     width: 1200px;
     margin: 0 auto;
 }
 
-.slider{
+.slider {
     margin: 100px auto;
     width: 80%;
 }
 
-.slider img{
+.slider img {
     height: auto;
     width: 100%;
 }
+
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
     color: #000;
 }
 
-.footer{
+.footer {
     color: #3d5cdb;
     margin-top: 65px;
     margin-bottom: 25px;
+    font-family: "Futura-Med"
+}
+
+.fuwatAnime {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1.5s;
+ -ms-animation-duration:1.5s;
+ animation-duration:1.5s;
+ -webkit-animation-name: fuwatAnime;
+ -ms-animation-name: fuwatAnime;
+ animation-name: fuwatAnime;
+ visibility: visible !important;
+}
+@-webkit-keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }

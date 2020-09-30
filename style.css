@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Futura-Med';
-  src: url('/fonts/Futura-Med.ttf') format('woff');
-       url('/fonts/Futura-Med.ttf') format('truetype');
+    font-family: 'Futura-Med';
+    src: url('/fonts/Futura-Med.ttf') format('woff');
+    url('/fonts/Futura-Med.ttf') format('truetype');
 }
- 
+
 * {
     margin: 0;
     padding: 0;
@@ -68,14 +68,15 @@ h1 {
     font-size: 42px;
     font-style: italic;
     margin-top: 45px;
-    font-family: "Futura-Med"
+    font-family: "Futura-Med";
 }
 
 h2 {
     color: #3d5cdb;
-    font-size: 42px;
+    font-size: 60px;
     padding: 50px;
-    font-family: "Futura-Med"
+    margin-top: 10px;
+    font-family: "Futura-Med";
 }
 
 .introduction {
@@ -156,22 +157,17 @@ a.yellowbox {
     height: 100vh;
     position: relative;
     display: table;
-    /*
-    margin-top: 50px;
-    padding-bottom: 50px;
-    height: 942px;
-*/
+    overflow: hidden;
 }
 
 .corses-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .detail-courses {
-    position: relative;
+/*    position: relative;*/
     width: 180px;
     height: 280px;
     background-color: #fff;
@@ -181,9 +177,21 @@ a.yellowbox {
     border-radius: 12px;
 }
 
+#particles-js {
+    height: 100vh;
+    width: 100vw;
+    background-color: #D6E6F9;
+    z-index: -10;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
 .detail-courses img {
     margin: 10px;
-
 }
 
 /*
@@ -229,10 +237,11 @@ h3 {
     border-radius: 12px;
 }
 
-figure{
+figure {
     height: 160px;
     width: 180px;
 }
+
 .first-line {
     width: 100vw;
     height: 100vh;
@@ -244,7 +253,7 @@ figure{
     flex-wrap: wrap;
 }
 
-#html img{
+#html img {
     padding-top: 7px;
 }
 
@@ -256,7 +265,7 @@ figure{
     background-color: #29AADF;
 }
 
-#unity img{
+#unity img {
     padding-top: 12px;
 }
 
@@ -264,7 +273,7 @@ figure{
     background-color: #333;
 }
 
-#ruby img{
+#ruby img {
     padding-top: 10px;
 }
 
@@ -291,34 +300,17 @@ figure{
     background-color: #73CEDE;
 }
 
-#particles-js {
-    height: 100vh;
-    width: 100vw;
-    background-color: #D6E6F9;
-    z-index: -1;
-    overflow: hidden;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-
-}
-
-/*
 .images{
-    width: 1200px;
-    height: 800px;
+   margin: 0 auto;
 }
-*/
 
 .wrapper {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
 }
 
 .slider {
-    margin: 100px auto;
+    margin: 0px auto;
     width: 80%;
 }
 
@@ -341,22 +333,42 @@ figure{
 }
 
 .fuwatAnime {
- -webkit-animation-fill-mode:both;
- -ms-animation-fill-mode:both;
- animation-fill-mode:both;
- -webkit-animation-duration:1.5s;
- -ms-animation-duration:1.5s;
- animation-duration:1.5s;
- -webkit-animation-name: fuwatAnime;
- -ms-animation-name: fuwatAnime;
- animation-name: fuwatAnime;
- visibility: visible !important;
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
 }
+
 @-webkit-keyframes fuwatAnime {
- 0% { opacity: 0; -webkit-transform: translateY(-20px); }
- 100% { opacity: 1; -webkit-transform: translateY(0); }
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
 }
+
 @keyframes fuwatAnime {
- 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
- 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }

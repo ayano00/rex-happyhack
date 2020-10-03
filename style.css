@@ -15,11 +15,12 @@ body {
     text-align: center;
     color: #333;
     margin: 0 auto;
-    fonts-family: 'ヒラギノ角ゴ ProN W3';
+    font-family: 'ヒラギノ角ゴ ProN W3';
 }
 
 .header {
     height: 100vh;
+    /*    width: 100vw;*/
     position: relative;
     overflow: hidden;
     background-position: center center;
@@ -28,12 +29,16 @@ body {
 
 .header-logo {
     width: 100%;
-    overflow: hidden;
+/*    overflow: hidden;*/
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-logo img {
-    margin-top: 130px;
+    margin-top: 12%;
+    justify-content: center;
+    align-items: center;
 }
 
 .header ul {
@@ -81,14 +86,20 @@ h2 {
 
 .introduction {
     margin: 0 auto;
-    width: 1040px;
-    height: 1000px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .detail {
-    width: 1040px;
-    height: 800px;
+    width: 100vw;
+/*    height: 800px;*/
     margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .detail p {
@@ -101,6 +112,7 @@ h2 {
 
 .intro1 img {
     margin-right: 90px;
+    margin-left: 10%;
     float: left;
 }
 
@@ -110,32 +122,44 @@ h2 {
 
 .intro2 {
     margin-top: 100px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .intro2 img {
     float: left;
-    overflow: hidden;
+    overflow: visible;
     margin-left: 90px;
+    margin-bottom: 60px;
     margin-top: 30px;
 }
 
 .intro2 p {
     margin-top: 25px;
-    margin-left: 50px;
+    margin-bottom: 60px;
+    margin-left: 12%;
     float: left;
+}
+
+.detail p{
+    justify-content: center;
+    align-items: center;
 }
 
 .detail a {
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     padding: 7px 50px;
     color: #fff;
-    /*    border: 1px solid #3b5998;*/
+    border: 1px solid #3b5998;
     border-radius: 12px;
     text-decoration: none;
     transition: 0.5s;
 }
+
 
 a:hover {
     box-shadow: 0 0 10px gray;
@@ -160,16 +184,21 @@ a.yellowbox {
     overflow: hidden;
 }
 
-.corses-wrapper {
+.courses-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title-courses {
+    position: relative;
 }
 
 .detail-courses {
-/*    position: relative;*/
-    width: 180px;
-    height: 280px;
+    position: relative;
     background-color: #fff;
     padding: 30px;
     margin: 20px 10px 10px;
@@ -178,16 +207,16 @@ a.yellowbox {
 }
 
 #particles-js {
-    height: 100vh;
-    width: 100vw;
-    background-color: #D6E6F9;
-    z-index: -10;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: -10;
+    background-color: #D6E6F9;
 }
 
 .detail-courses img {
@@ -300,12 +329,12 @@ figure {
     background-color: #73CEDE;
 }
 
-.images{
-   margin: 0 auto;
+.images {
+    margin: 0 auto;
 }
 
 .wrapper {
-    width: 1300px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -323,6 +352,12 @@ figure {
 .slick-prev:before,
 .slick-next:before {
     color: #000;
+}
+
+.access{
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -370,5 +405,21 @@ figure {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+@media screen and (max-width: 900px){
+    .header-logo img{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width : 450px) {
+
+    .detail {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
     }
 }

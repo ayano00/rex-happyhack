@@ -29,7 +29,7 @@ body {
 
 .header-logo {
     width: 100%;
-/*    overflow: hidden;*/
+    /*    overflow: hidden;*/
     position: relative;
     justify-content: center;
     align-items: center;
@@ -90,12 +90,13 @@ h2 {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 }
 
 
 .detail {
     width: 100vw;
-/*    height: 800px;*/
+    /*    height: 800px;*/
     margin: 0 auto;
     margin-bottom: 20px;
     justify-content: center;
@@ -103,17 +104,21 @@ h2 {
 }
 
 .detail p {
-    overflow: hidden;
+    /*    overflow: hidden;*/
     width: 400px;
     height: 300px;
     text-align: left;
     line-height: 30px;
 }
 
+.intro1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .intro1 img {
     margin-right: 90px;
-    margin-left: 10%;
-    float: left;
 }
 
 .intro1 p {
@@ -122,12 +127,17 @@ h2 {
 
 .intro2 {
     margin-top: 100px;
+    /*
     width: 100vw;
     height: 100vh;
+*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro2 img {
-    float: left;
+
     overflow: visible;
     margin-left: 90px;
     margin-bottom: 60px;
@@ -135,13 +145,15 @@ h2 {
 }
 
 .intro2 p {
+    /*
     margin-top: 25px;
     margin-bottom: 60px;
     margin-left: 12%;
-    float: left;
+*/
+    /*    float: left;*/
 }
 
-.detail p{
+.detail p {
     justify-content: center;
     align-items: center;
 }
@@ -154,7 +166,6 @@ h2 {
     font-size: 18px;
     padding: 7px 50px;
     color: #fff;
-    border: 1px solid #3b5998;
     border-radius: 12px;
     text-decoration: none;
     transition: 0.5s;
@@ -354,7 +365,7 @@ figure {
     color: #000;
 }
 
-.access{
+.access {
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -407,19 +418,42 @@ figure {
         transform: translateY(0);
     }
 }
-@media screen and (max-width: 900px){
-    .header-logo img{
+
+@media screen and (max-width: 900px) {
+    .header-logo img {
         width: 80vw;
     }
 }
 
-@media screen and (max-width : 450px) {
-
+@media screen and (max-width : 900px) {
     .detail {
-        display: flex;
+        margin-bottom: 30px;
+        font-size: 13px;
+        align-items: center;
+    }
+
+    .intro1 {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+    }
+
+    .intro1 img {
+        margin-right: 0px;
+    }
+
+    .intro2 {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        /*        height: 100vh;*/
+        margin-top: 0px;
+    }
+
+    .intro2 img {
+        overflow: visible;
+        margin-left: 0px;
+        margin-top: 20px;
     }
 }

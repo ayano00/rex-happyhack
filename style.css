@@ -87,7 +87,7 @@ h2 {
 .introduction {
     margin: 0 auto;
     width: 100vw;
-    height: 100vh;
+/*    height: 100vh;*/
     justify-content: center;
     align-items: center;
     overflow: visible;
@@ -189,9 +189,9 @@ a.yellowbox {
 .courses {
     margin: 0 auto;
     width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: table;
+/*    height: 100vh;*/
+/*    position: relative;*/
+/*    display: table;*/
     overflow: hidden;
 }
 
@@ -426,6 +426,14 @@ figure {
 }
 
 @media screen and (max-width : 900px) {
+    .header-logo img {
+        width: 80vw;
+    }
+    
+    .header-logo h1{
+        font-size: 30px;
+    }
+    
     .detail {
         margin-bottom: 30px;
         font-size: 13px;
@@ -455,5 +463,17 @@ figure {
         overflow: visible;
         margin-left: 0px;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .access iframe{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    nav{
+        display: none;
     }
 }

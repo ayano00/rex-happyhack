@@ -20,7 +20,6 @@ body {
 
 .header {
     height: 100vh;
-    /*    width: 100vw;*/
     position: relative;
     overflow: hidden;
     background-position: center center;
@@ -87,7 +86,6 @@ h2 {
 .introduction {
     margin: 0 auto;
     width: 100vw;
-    /*    height: 100vh;*/
     justify-content: center;
     align-items: center;
     overflow: visible;
@@ -96,7 +94,6 @@ h2 {
 
 .detail {
     width: 100vw;
-    /*    height: 800px;*/
     margin: 0 auto;
     margin-bottom: 20px;
     justify-content: center;
@@ -127,10 +124,6 @@ h2 {
 
 .intro2 {
     margin-top: 100px;
-    /*
-    width: 100vw;
-    height: 100vh;
-*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,13 +260,14 @@ h3 {
     /*    display: flex;*/
     justify-content: center;
     align-items: center;
-    font-size: 13px;
-    padding: 10px 0px;
+    font-size: 15px;
+    padding: 13px 10px;
     color: #fff;
     text-decoration: none;
     transition: 0.5s;
-    position: relative;
+    /*    position: relative;*/
     border-radius: 12px;
+    margin: 0 auto;
 }
 
 figure {
@@ -438,6 +432,10 @@ figure {
         align-items: center;
     }
 
+    .detail a {
+        margin-left: 120px;
+    }
+
     .intro1 {
         flex-wrap: wrap;
         justify-content: center;
@@ -462,48 +460,126 @@ figure {
         margin-left: 0px;
         margin-top: 20px;
     }
+
+    h2 {
+        font-size: 60px;
+    }
 }
 
 @media screen and (max-width : 600px) {
-     .header-logo img {
+    .header-logo img {
         margin-top: 180px;
     }
-    
+
     .access iframe {
         width: 100vw;
+        height: 250px;
     }
-    
-    h2{
-        40px;
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 50px;
     }
 }
 
 @media screen and (max-width : 500px) {
-     .header-logo img {
+    .header-logo img {
         margin-top: 220px;
     }
-    
+
     .intro1 img {
-        width: 100vw;
+        width: 90vw;
     }
-    
-    .intro2 img{
-        width: 100vw;
+
+    .intro2 img {
+        width: 90vw;
     }
-    
-    .detail a{
+
+    .detail a {
         margin: 10px;
+        text-align: center;
+        align-content: center;
+        margin-left: 65px;
     }
-    .detail p{
-        padding: 5%;
+
+    .detail p {
+        padding-left: 10%;
+        padding-right: 10%;
     }
-    h2{
-        40px;
+
+    h1 {
+        font-size: 8px;
+    }
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
     }
 }
 
 @media screen and (max-width : 480px) {
     nav {
         display: none;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .detail-courses a {
+        font-size: 9px;
+        padding: 12px 0px;
+        margin-bottom: 15px;
+                position: relative;
+        border-radius: 20px;
+        display: block;
+    }
+
+    .detail-courses {
+        position: relative;
+        padding: 20px;
+        margin: 10px 10px 10px;
+        border-radius: 15px;
+    }
+
+    figure {
+        height: 100px;
+        width: 120px;
+    }
+
+    h3 {
+        padding-bottom: 14px;
+        font-size: 12px;
+    }
+
+    #html img {
+        width: 40px;
+    }
+
+    #css img {
+        width: 37px;
+        padding-top: 7px;
+    }
+
+    #js img {
+        width: 40px;
+    }
+
+    #ruby img {
+        width: 50px;
+    }
+
+    #unity img {
+        width: 50px;
+    }
+
+    #swift img {
+        width: 50px;
+        padding-top: 5px;
+    }
+
+    #go img {
+        width: 60px;
     }
 }

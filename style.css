@@ -27,17 +27,31 @@ body {
 }
 
 .header-logo {
-    width: 100%;
+/*    width: 100%;*/
     /*    overflow: hidden;*/
     position: relative;
     justify-content: center;
     align-items: center;
+    vertical-align: middle;
 }
 
 .header-logo img {
-    margin-top: 12%;
-    justify-content: center;
-    align-items: center;
+/*    margin-top: 12%;*/
+/*
+ 
+      position: absolute;
+*/
+/*  display: flex;*/
+/*
+  justify-content: center;
+  align-items: center;
+*/
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px ;
+    
+    
 }
 
 .header ul {
